@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BodyBuddy GPT</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="/static/main.js"></script>
+</head>
+<body>
+    <h1>🏋️‍♂️ BodyBuddy GPT 🥗</h1>
+
+    <form method="POST" onsubmit="return handleSubmit(event)">
+        <input type="text" name="age" placeholder="Age" required><br>
+        <input type="text" name="gender" placeholder="Gender" required><br>
+        <input type="text" name="height" placeholder="Height (in ft)" required><br>
+        <input type="text" name="weight" placeholder="Weight (in lbs)" required><br>
+        <input type="text" name="activity" placeholder="Activity Level" required><br>
+        <input type="text" name="diet" placeholder="Dietary Restrictions" required><br>
+        <input type="text" name="goal" placeholder="Fitness Goal" required><br>
+        <input type="text" name="fitness_level" placeholder="Fitness Level" required><br><br>
+        <input type="text" name="concerns" placeholder="Concerns / Thoughts (optional)"><br><br>
+
+        <label>Choose Plan:</label><br>
+        <select name="plan_type" required>
+            <option value="diet">Diet Focused Plan</option>
+            <option value="workout">Workout Focused Plan</option>
+        </select><br><br>
+
+        <button type="submit">Get My Personalized Plan</button>
+    </form>
+
+    <!-- Loading screen -->
+    <div id="loading-overlay">
+        <lord-icon
+            src="https://cdn.lordicon.com/mfblariy.json"
+            trigger="loop"
+            stroke="bold"
+            state="loop-cycle"
+            colors="primary:#e83a30,secondary:#e83a30"
+            class="loading-icon"
+        </lord-icon>
+        <div id="loading-message">Fetching your personalized plan...</div>
+        <div id="loading-fact"></div>
+    </div>
+
+</body>
+</html>

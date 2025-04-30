@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 2.5rem 1.25rem;
+}
+
+h1, h2 {
+  color: #e60000;
+}
+
+form {
+  background-color: #000000;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+input, select, button {
+  display: block;
+  margin: 0.625rem auto;
+  padding: 0.75rem;
+  width: 15.625rem;
+  border: 0.125rem solid #e60000;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #e60000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+.footer {
+  margin-top: 3.125rem;
+  font-size: 0.875rem;
+  color: #888888;
+}
+
+/* Loading screen */
+#loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.loading-icon {
+  width: 15rem;
+  height: 15rem;
+}
+
+#loading-message,
+#loading-fact {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #e83a30;
+  text-align: center;
+  max-width: 25rem;
+  font-weight: 500;
+}
